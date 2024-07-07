@@ -4,7 +4,7 @@
 - therefore, i added this function to FeeModule.sol
 ```sol
 function ChangePortfolioAddress(address _portfolio) public {
-   portfolio = _portfolio;
+   portfolio = IPortfolio(_portfolio);
 }
 ```
 - And OfCourse this line:
