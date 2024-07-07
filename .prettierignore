@@ -1,8 +1,0 @@
-.vscode
-coverage
-artifacts
-cache
-types
-*.yml
-*.hbs
-*.json
