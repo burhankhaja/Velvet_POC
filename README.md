@@ -15,7 +15,8 @@ import {IPortfolio} from  "src/contracts/core/interfaces/IPortfolio.sol";
 ## Setup
 **`Now, All You have to do is to this:`**
 - build dependencies quickly by running `forge build` , it would take 3 seconds hardly
-- place `GIST` in **test/** folder such that `test/POC.sol` file is created, i've already provided a link to a `gist` in issue comments *(probably last one)*
+- copy all the code from `GIST` and paste it in **test/P0C.sol**,
+- i've already provided a link to a `gist` in issue comments *(probably last one)*
 
 
 
