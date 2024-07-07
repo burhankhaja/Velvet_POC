@@ -16,8 +16,8 @@ import {IPortfolio} from  "src/contracts/core/interfaces/IPortfolio.sol";
 **`Now, All You have to do is to this:`**
 - clone this repo to your local machine
 - run `forge build` for building dependecies quickly *(time <= 3seconds)*
-- copy all the code from `GIST` and paste it in **test/P0C.sol**,
-- i've already provided a link to a `gist` in issue comments *(probably last one)*
+- copy all the code from `GIST` and paste it in **test/P0C.sol**, Remember i've already provided a link to a `gist` in issue comments *(probably last one)*
+- Follow the below `Attack` guidelines
 
 
 
