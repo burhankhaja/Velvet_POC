@@ -1,45 +1,66 @@
-# Audit Competition for Velvet-Capital
-This repository is for the audit competition for the Velvet-Capital.
-To participate, submit your findings only by using the on-chain submission process on https://app.hats.finance/vulnerability .
-## How to participate
-- follow the instructions on https://app.hats.finance/
-## Good luck!
-We look forward to seeing your findings.
-* * *
-## Running test cases
+## Foundry
 
-Install Dependencies:
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-```
-$ npm i --legacy-peer-deps
-```
+Foundry consists of:
 
-To run the testcases, make sure that the `.env` file is updated (with the RPC URLs, ENSO_KEY ,CHAIN_ID and the wallet mnemonic value).
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-To run the testcases of Arbitrum(set CHAIN_ID="42161" in env), run the following command:
+## Documentation
 
-```
-$ npx hardhat test test/Arbitrum/*test.*
-```
+https://book.getfoundry.sh/
 
-To run the testcases of Bsc(set CHAIN_ID="56" in env), run the following command:
+## Usage
 
-```
-$ npx hardhat test test/Bsc/*test.*
+### Build
+
+```shell
+$ forge build
 ```
 
-To run the coverage of Arbitrum(set CHAIN_ID="42161" in env), run the following command:
+### Test
 
-```
-$ npm run coverageArbitrum
-```
-
-To run the coverage of Bsc(set CHAIN_ID="56" in env), run the following command:
-
-```
-$ npm run coverageBsc
-
+```shell
+$ forge test
 ```
 
-### Note
-Issue found by other auditor and out of scope issue https://docs.google.com/spreadsheets/d/18K7O1Mms9261mnS9OfDFelg4nSkwC34uUoDC3OS-GHE/edit#gid=76608452
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
